@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, Grid, Container } from 'semantic-ui-react'
 import Style from '../style/Planets.module.css'
 
-const Plantes = ({ data }) => {
+const Plantes = ({data}) => {
   return (
     <section className={Style.bg}>
       <Container>
