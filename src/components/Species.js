@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Grid, Container } from 'semantic-ui-react'
-import Style from '../style/Planets.module.css'
+import Style from '../style/Species.module.css'
 
 const Species = ({data}) => {
   return (
