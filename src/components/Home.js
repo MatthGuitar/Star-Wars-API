@@ -16,12 +16,12 @@ const Home = () => {
         <p>
         Striking from a fortress hidden among the billion stars of the galaxy,
         rebel spaceships have won their first victory in a battle with the powerful Imperial Starfleet.
-        The EMPIRE fears that another defeat could bring a thousand more solar systems into the rebellion,
+        The EMPIRE fears that data collected by the rebels using the Star Wars API would lead to
+        another defeat that could bring a thousand more solar systems into the rebellion,
         and Imperial control over the galaxy would be lost forever.
         </p>
         <p>
-        To crush the rebellion once and for all, the EMPIRE is constructing a sinister new battle station. 
-        Powerful enough to destroy an entire planet, its completion spells certain doom for the champions of freedom.
+        This Web Site is a React project made using the swapi to get the data for the rebels.
         </p>
       </Container>
     </section>

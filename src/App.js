@@ -27,6 +27,7 @@ function App() {
       setPlanets(data.results)
       setLoading(false)
     }
+    
     async function fetchSpecies() {
       let res = await fetch('https://swapi.dev/api/species');
       let data = await res.json();
@@ -42,7 +43,6 @@ function App() {
     <>
       <Router>
       <Navbar />
-
         {loading ? (
           <Dimmer active inverted>
             <Loader inverted>Loading</Loader>

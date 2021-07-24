@@ -16,16 +16,17 @@ padding: 10vh 0;
 }  
 .title{
 margin: 0 auto;
-font-size: 7em;
+font-size: 10em;
 color: #f3dc0b;
-width: 28vw;
-padding: px 0;
+width: 40vw;
+
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }  
 .main_text{
 font-size: 2em;
 line-height: 2.5em;
 word-spacing: 20px;
+margin-top: 15vh;
 color: #f3dc0b;
 font-family: Arial, Helvetica, sans-serif;
 }
