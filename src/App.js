@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import Navbar from './components/Navbar'
-import {Container, Dimmer, Loader } from 'semantic-ui-react';
+import { Dimmer, Loader } from 'semantic-ui-react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
 import Characters from './components/Characters';
 import Planets from './components/Planets';
+import Species from './components/Species';
 
 function App() {
   const [people, setPeople] = useState([])
   const [planets, setPlanets] = useState([])
+  const [species, setSpecies] = useState([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() =>{
@@ -26,9 +27,16 @@ function App() {
       setPlanets(data.results)
       setLoading(false)
     }
+    async function fetchSpecies() {
+      let res = await fetch('https://swapi.dev/api/species');
+      let data = await res.json();
+      setSpecies(data.results)
+      setLoading(false)
+    }
 
     fetchPeople();
     fetchPlanets();
+    fetchSpecies();
   }, [])
   return (
     <>
@@ -49,6 +57,9 @@ function App() {
           </Route>
           <Route exact path='/planets'>
             <Planets data={planets}/>
+          </Route>
+          <Route exact path='/species'>
+            <Species data={species}/>
           </Route>
         </Switch>
         )}
