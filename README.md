@@ -4,7 +4,8 @@ This project is a Web Site made using the https://swapi.dev/ and React.
 ### Deploy
 This project was deployed using Netlify, you can see it in the link bellow
 
-- 
+- [Live Project](https://app.netlify.com/sites/hardcore-khorana-01416c/overview)
+
 
 ## Desing
 You can see the Wireframe, Desing and Prototype of this project in Figma
