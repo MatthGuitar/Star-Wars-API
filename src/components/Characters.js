@@ -6,9 +6,9 @@ const Characters = ({ data }) => {
   return (
     <section className={Style.bg}>
       <Container>
-        <h1 className={Style.title}>Planets</h1>
+        <h1 className={Style.title}>Characters</h1>
         <Grid columns={3}>
-          {data.map((planets, i) => {
+          {data.map((people, i) => {
             return (
               <Grid.Column key={i}>
                 <Card>
@@ -17,14 +17,14 @@ const Characters = ({ data }) => {
                     <Card.Header style={{
                      color: "#f3dc0b",
                      fontSize: "2em",
-                     paddingBottom: "5px" }}>{planets.name}</Card.Header>
+                     paddingBottom: "5px" }}>{people.name}</Card.Header>
                     <Card.Description>
-                      <h2>Climate</h2>
-                      <p>{planets.climate}</p>
-                      <h2>Diameter</h2>
-                      <p>{planets.diameter}</p>
-                      <h2>Population</h2>
-                      <p>{planets.population}</p>
+                      <h2>Height</h2>
+                      <p>{people.height} Cm</p>
+                      <h2>Weight</h2>
+                      <p>{people.mass} Kg</p>
+                      <h2>Gender</h2>
+                      <p>{people.gender}</p>
                     </Card.Description>
                   </Card.Content>
                 </Card>

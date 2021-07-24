@@ -8,7 +8,14 @@
   width: 15vw;
   height: 20vh;
 }
-
+.navbar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
 .navbar ul li{
   color: #f3dc0b;
+  margin: 40px 20px;
+  font-size: 1.5em;
+  padding: 10px;
 }
