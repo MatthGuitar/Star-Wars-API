@@ -1,0 +1,14 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #000;
+}
+.logo{
+  width: 15vw;
+  height: 20vh;
+}
+
+.navbar ul li{
+  color: #f3dc0b;
+}
