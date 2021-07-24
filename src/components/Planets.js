@@ -22,7 +22,7 @@ const Plantes = ({data}) => {
                       <h2>Climate</h2>
                       <p>{planets.climate}</p>
                       <h2>Diameter</h2>
-                      <p>{planets.diameter}</p>
+                      <p>{planets.diameter} Km</p>
                       <h2>Population</h2>
                       <p>{planets.population}</p>
                     </Card.Description>
